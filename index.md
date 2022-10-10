@@ -1,5 +1,3 @@
-# LustrumAanmeldingen
-
 ```mermaid
     pie showData
         title Aanmeldingen voor het lustrum
