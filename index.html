@@ -8,7 +8,42 @@
   <title>Life</title>
 </head>
 <body bgcolor="#14FFB0">
-<canvas id="myCanvas" width="800" height="600" style="border:1px solid #000000;"></canvas>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+<script>
+  const labels = [
+    'January',
+    'February',
+    'March',
+    'April',
+    'May',
+    'June',
+  ];
+
+  const data = {
+    labels: labels,
+    datasets: [{
+      label: 'My First dataset',
+      backgroundColor: 'rgb(255, 99, 132)',
+      borderColor: 'rgb(255, 99, 132)',
+      data: [0, 10, 5, 2, 20, 30, 45],
+    }]
+  };
+
+  const config = {
+    type: 'line',
+    data: data,
+    options: {}
+  };
+</script>
+<script>
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+
+
 </body>
-<script src="code.js"></script>
 </html>
