@@ -1,7 +1,20 @@
-function runOnLoad() {
-   var c = document.getElementById("myCanvas");
-   var ctx = c.getContext("2d");
-   ctx.clearRect(0,0,800,600);
-   ctx.fillStyle = "red";
-   ctx.fillRect(10,10,100,100);
-}
+const config = {
+  type: 'pie',
+  data: data,
+};
+
+const data = {
+  labels: [
+    'Leden',
+    'Reunisten'
+  ],
+  datasets: [{
+    label: 'My First Dataset',
+    data: [34, 31],
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)'
+    ],
+    hoverOffset: 4
+  }]
+};
