@@ -13,26 +13,22 @@
 </div>
 <script>
   const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
+    'Leden',
+    'Reunisten'
   ];
 
   const data = {
     labels: labels,
     datasets: [{
-      label: 'My First dataset',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45],
+      label: 'Aanmeldingen lustrum',
+      backgroundColor: 'rgb(239, 146, 37)',
+      borderColor: 'rgb(28,  28, 28)',
+      data: [34, 31],
     }]
   };
 
   const config = {
-    type: 'line',
+    type: 'pie',
     data: data,
     options: {}
   };
