@@ -9,7 +9,7 @@ const data = {
     'Reunisten'
   ],
   datasets: [{
-    label: 'My First Dataset',
+    label: 'Aanmeldingen voor het gala',
     data: [36, 31],
     backgroundColor: [
       'rgb(239, 146, 37)',
